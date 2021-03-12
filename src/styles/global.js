@@ -6,6 +6,20 @@ const GlobalStyles = createGlobalStyle`
   ${normalize}
   ${reset}
 
+  :root {
+    /* Typography */
+    --main-font: 'Manrope', sans-serif;
+    --text-weight: 600;
+    --title-weight: 800;
+
+    /* Colors */
+    --blue-title: #293356;
+    --blue-text: #848EAD;
+    --light-blue: #f1f5fe;
+    --very-light-blue: #f9faff;
+    --white: #fff;
+  }
+
   html {
     box-sizing: border-box;
   }
@@ -15,8 +29,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
+    color: var(--blue-text);
+    font-family: var(--main-font);
+    font-weight: var(--text-weight);
   }
 `;
 
