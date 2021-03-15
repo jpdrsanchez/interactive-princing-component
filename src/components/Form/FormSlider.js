@@ -34,6 +34,7 @@ const Slider = styled.input`
     background-position: center center;
     box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
     transition: all 0.3s;
+    border: none;
 
     &:hover {
       background-color: var(--green-hover);
@@ -41,6 +42,7 @@ const Slider = styled.input`
   }
 
   &::-moz-range-thumb {
+    appearance: none;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -49,6 +51,7 @@ const Slider = styled.input`
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    border: none;
 
     &:hover {
       background-color: var(--green-hover);
